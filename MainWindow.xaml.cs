@@ -31,7 +31,7 @@ namespace WpfApplication
         {
             InitializeComponent();
 
-           
+           int a = 12;
 
         }
         
