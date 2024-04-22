@@ -1,0 +1,34 @@
+﻿<Window x:Name="Password1" x:Class="WpfApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication"
+        mc:Ignorable="d"
+        
+        
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Title="Authentication" Height="480" Width="310">
+    <Grid Name ="My_space">
+        <StackPanel>
+            <TextBlock Text ="Логин:" Height ="24" Margin="33,85,33,355" FontSize="16" Foreground="Black"/>
+            <TextBlock Text ="Пароль:" Height ="24" Margin="33,-325,33,355" FontSize="16" Foreground="Black"/>
+        </StackPanel>
+        
+        <StackPanel Height="463" VerticalAlignment="Center">
+            <TextBlock Text="Авторизация" FontSize="30"  Height="65" Margin="59,30" Width="192"/>
+        </StackPanel>
+        
+            <TextBox Name = "Login" Height ="24" Margin="33,112,33,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+        </TextBox>
+
+        <PasswordBox Name ="Password"  Height ="24" Margin="33,163,33,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Background="White">
+        </PasswordBox>
+        <Button x:Name ="Enter_button"  IsDefault="True" Height="24" Margin="33,200,166,200"  Content="Войти" Click="Enter_Button"/>
+
+        <Button Name = "reg_button" Height="24" Content="Регистрация" Click="Registration" Margin="166,200,33,200"/>
+        
+    </Grid>
+
+</Window>
