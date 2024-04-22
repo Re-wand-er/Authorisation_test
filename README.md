@@ -1,2 +1,2 @@
-# Authorization test
+# Authorisation test
 **Something**
